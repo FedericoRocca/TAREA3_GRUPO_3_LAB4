@@ -58,6 +58,37 @@ public class Ventana2 extends JFrame {
 		JButton btnCalcular = new JButton("CALCULAR");
 		btnCalcular.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+			    
+			    textFieldN1.setBackground(Color.white);
+			    textFieldN2.setBackground(Color.white);
+			    textFieldN3.setBackground(Color.white);
+			    textFieldPro.setBackground(Color.white);
+			    textFieldCond.setBackground(Color.white);
+			    
+			    if( textFieldN1.getText().equals("") )
+			    {
+			        textFieldN1.setBackground(Color.red);
+			    }
+			    
+			    if( textFieldN2.getText().equals("") )
+                {
+                    textFieldN2.setBackground(Color.red);
+                }
+			    
+			    if( textFieldN3.getText().equals("") )
+                {
+                    textFieldN3.setBackground(Color.red);
+                }
+			    
+			    if( textFieldPro.getText().equals("") )
+                {
+			        textFieldPro.setBackground(Color.red);
+                }
+			    
+			    if( textFieldCond.getText().equals("") )
+                {
+			        textFieldCond.setBackground(Color.red);
+                }
 
 				String item;
 				item = CB.getSelectedItem().toString();
