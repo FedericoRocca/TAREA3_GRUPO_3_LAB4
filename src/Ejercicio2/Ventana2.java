@@ -116,6 +116,15 @@ public class Ventana2 extends JFrame {
 		getContentPane().add(btnSalir);
 		
 		JButton btnNuevo = new JButton("NUEVO");
+		btnNuevo.addActionListener(new ActionListener() {
+		    public void actionPerformed(ActionEvent e) {
+		        textFieldN1.setText("");
+		        textFieldN2.setText("");
+		        textFieldN3.setText("");
+		        textFieldPro.setText("");
+		        textFieldCond.setText("");
+		    }
+		});
 		btnNuevo.setBounds(357, 120, 97, 38);
 		getContentPane().add(btnNuevo);
 		
